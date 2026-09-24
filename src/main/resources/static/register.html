@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — NeighbourShare</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<main class="auth-shell">
+    <div class="theme-switcher auth-theme-switcher">
+        <button class="theme-btn active" data-theme="light" title="Светлая тема"><i class="bi bi-brightness-high"></i>
+        </button>
+        <button class="theme-btn" data-theme="dark" title="Тёмная тема"><i class="bi bi-moon"></i></button>
+    </div>
+    <section class="auth-card"><a class="auth-brand" href="/"><span class="brand-mark"><i
+            class="bi bi-share brand-icon"></i></span>Neighbour<span style="color:var(--primary)">Share</span></a>
+        <div class="eyebrow">Присоединяйтесь</div>
+        <h1>Создайте аккаунт</h1>
+        <p class="lead">Откройте доступ к вещам, которые делают жизнь проще.</p>
+        <div id="error" class="alert alert-danger d-none"></div>
+        <form id="registerForm">
+            <div class="mb-3"><label for="name" class="form-label">Имя</label><input type="text" class="form-control"
+                                                                                     id="name"
+                                                                                     placeholder="Как к вам обращаться?"
+                                                                                     autocomplete="name" required
+                                                                                     maxlength="80"></div>
+            <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email"
+                                                                                        class="form-control" id="email"
+                                                                                        placeholder="you@example.com"
+                                                                                        autocomplete="email" required>
+            </div>
+            <div class="mb-4"><label for="password" class="form-label">Пароль</label><input type="password"
+                                                                                            class="form-control"
+                                                                                            id="password"
+                                                                                            placeholder="Минимум 8 символов"
+                                                                                            autocomplete="new-password"
+                                                                                            minlength="8" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100"><i class="bi bi-person-plus me-2"></i>Создать аккаунт
+            </button>
+        </form>
+        <p class="mt-4 mb-0 text-center text-muted">Уже есть аккаунт? <a href="/login.html">Войти</a></p></section>
+</main>
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
